@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  color-scheme: light dark;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+}
+#root {
+  max-width: 550px;
+  margin: 0 auto;
+  color: #2B283A;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.418);
+}
+header {
+  height: 55px;
+  background: #F55A5A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+}
+.header-icon {
+  height: 24px;
+}
+.header-text {
+  font-weight: 500;
+  font-size: 14.5px;
+  color: #FFFFFF;
+}
+.journeys {
+  /* height: 649px; */
+  max-width: 470px;
+  margin: 0 auto;
+}
+.journey-card {
+  display: flex;
+  align-items: center;
+  gap: 19px;
+  padding: 18px 0 21px 0;
+}
+.journey-card:first-child {
+  padding-top: 45px;
+}
+.journey-card:last-child {
+  padding-bottom: 28px;
+}
+.journey-card:not(:last-child) {
+  border-bottom: 1px solid #2524247f;
+}
+.journey-card-img {
+  width: 125px;
+  height: 168px;
+  border-radius: 5px;
+  display: block;
+}
+/* .journey-card-info {
+
+  Not using this class for any styling...
+
+} */
+.journey-card-info-div {
+  display: flex;
+  align-items: center;
+}
+.journey-card-info-div-location-icon {
+  width: 7px;
+}
+.journey-card-info-div-location {
+  font-size: 10.24px;
+  line-height: 12px;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+  margin-left: 4px;
+}
+.journey-card-info-div-map-link {
+  font-size: 10.24px;
+  line-height: 12px;
+  text-decoration-line: underline;
+  color: #918E9B;
+  margin-left: 12px;
+}
+.journey-card-info-title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  margin-top: 7px;
+  word-break: break-word;
+}
+.journey-card-info-dates {
+  font-weight: 700;
+  font-size: 10.24px;
+  line-height: 12px;
+  margin-top: 13px;
+}
+.journey-card-info-description {
+  font-size: 12.24px;
+  line-height: 150%;
+  margin-top: 9px;
+}
+@media (max-width: 495px) {
+  .journey-card {
+    padding: 18px 10px 21px 10px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #45414159;
+  }
+  #root {
+    background-color: rgba(0, 0, 0, 0.489);
+    color: #ffffff99;
+  }
+  .header-text {
+    color: #2B283A;
+  }
+  .journey-card:not(:last-child) {
+  border-bottom: 1px solid #F5F5F5;
+  }
+}
